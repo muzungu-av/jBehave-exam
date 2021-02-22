@@ -14,7 +14,7 @@ public class Operation {
     }
 
     /**
-     * для простоты алгоритм такой - если второй операнд = 0, вернуть Long.MIN_VALUE
+     * для простоты алгоритм такой - если второй операнд = 0, вернуть Long.MAX_VALUE
      *
      * @param value1 операнд 1
      * @param value2 операнд 2
@@ -24,6 +24,6 @@ public class Operation {
         if (value2 != 0) {
             return value1 / value2;
         } else
-            return Long.MIN_VALUE;
+            return Long.MAX_VALUE;
     }
 }
