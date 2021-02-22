@@ -1,6 +1,8 @@
 package av.exam.jbehave;
 
-public class Operation {
+public class Calculator {
+    private long lastResult;
+
     public long add(long value1, long value2) {
         return value1 + value2;
     }
@@ -25,5 +27,9 @@ public class Operation {
             return value1 / value2;
         } else
             return Long.MAX_VALUE;
+    }
+
+    public long getLastResult() {
+        return lastResult;
     }
 }
